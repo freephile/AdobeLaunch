@@ -20,7 +20,7 @@
 		},
 		"AdobeLaunchVandalizeEachPage": {
 			"description": "Write 'AdobeLaunch was here' on each page",
-			"value": false
+			"value": true
 		}
 	},
 	"HookHandlers": {
@@ -37,15 +37,20 @@
 		]
 	},
 	"ResourceFileModulePaths": {
-		"localBasePath": "resources",
-		"remoteExtPath": "AdobeLaunch/resources"
+		"localBasePath": "resources/ext.adobeLaunch",
+		"remoteExtPath": "AdobeLaunch/resources/ext.adobeLaunch"
 	},
 	"ResourceModules": {
-		"ext.boilerPlate": {
+		"ext.adobeLaunch": {
 			"dependencies": [],
 			"messages": [],
 			"styles": [],
-			"scripts": []
+			"packageFiles": [
+				"launch.js",
+				"init.js"
+			],
+			"position": "top",
+			"targets": ["mobile", "desktop"]
 		}
 	},
 	"manifest_version": 2
