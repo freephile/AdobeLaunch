@@ -18,15 +18,17 @@
  */
 
 namespace MediaWiki\Extension\AdobeLaunch;
+use OutputPage;
+use SkinTemplate;
 
-class Hooks implements \MediaWiki\Hook\BeforePageDisplayHook {
+class Hooks {
 
 	/**
 	 * @see https://www.mediawiki.org/wiki/Manual:Hooks/BeforePageDisplay
 	 * @param \OutputPage $out
 	 * @param \Skin $skin
 	 */
-	public function onBeforePageDisplay( $out, $skin ) : void {
+	public static function onBeforePageDisplay( OutputPage &$out, &$skin ) {
 		$config = $out->getConfig();
 		if ( $config->get( 'AdobeLaunchVandalizeEachPage' ) ) {
 			$out->addHTML( '<p>AdobeLaunch was here</p>' );

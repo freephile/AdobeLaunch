@@ -23,13 +23,8 @@
 			"value": true
 		}
 	},
-	"HookHandlers": {
-		"AdobeLaunchHooks": {
-			"class": "MediaWiki\\Extension\\AdobeLaunch\\Hooks"
-		}
-	},
 	"Hooks": {
-		"BeforePageDisplay": "AdobeLaunchHooks"
+		"BeforePageDisplay": "MediaWiki\\Extension\\AdobeLaunch\\Hooks::onBeforePageDisplay"
 	},
 	"MessagesDirs": {
 		"AdobeLaunch": [
