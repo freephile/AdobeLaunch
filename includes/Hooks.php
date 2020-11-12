@@ -33,6 +33,7 @@ class Hooks {
 		if ( $config->get( 'AdobeLaunchVandalizeEachPage' ) ) {
 			$out->addHTML( '<p>AdobeLaunch was here</p>' );
 			$out->addModules( 'oojs-ui-core' );
+			//$out->addHeadItem('AdobeLaunch', '../resources/ext.adobeLaunch/launch.js');
 		}
 	}
 
