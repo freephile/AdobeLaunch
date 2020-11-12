@@ -9,6 +9,10 @@
 	mw.adobeLaunch = {
 	};
 
+
+
+	var Adobelib = require( './launch.js' );
+
 	// The page details we want to track
 	var config = {
 		'site_id': 'FamilySearch',
