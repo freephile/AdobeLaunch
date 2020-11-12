@@ -1,3 +1,13 @@
+/** This didn't work to load a script element
+(function(a,b,c,d){
+    a='//assets.adobedtm.com/05064fe6cab0/c247cd0acad1/launch-7e623b6eec86.min.js';
+    b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;
+    a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+})();
+*/
+
+
+
 //  Immediately Invoked Function Expression (IIFE) or Self Executing Anonymous Function.
 ( function () {
 
