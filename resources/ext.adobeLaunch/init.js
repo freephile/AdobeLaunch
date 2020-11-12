@@ -37,4 +37,4 @@
 	// attach the _satellite object to the global window explicitly
 	window._satellite.track('page_view', config);
 
-} );
+} )();
