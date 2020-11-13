@@ -28,13 +28,10 @@
 	};
 
 	// establish that we're doing something
-	console.log( "ready! Recording Page View\n" );
+	console.log( "Adobe Launch recording Page View for " + config.page_detail );
 
 	window._satellite = window._satellite || {};
-
-	
-	
 	// attach the _satellite object to the global window explicitly
-	window._satellite.track('page_view', config);
+	// window._satellite.track('page_view', config);
 
 } )();
